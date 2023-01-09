@@ -26,6 +26,12 @@ https://marketplace.visualstudio.com/items?itemName=arcanis.vscode-zipfs
 $ yarn dlx @yarnpkg/sdks vscode
 ```
 
+### Switch the version of TypeScript
+In VSCode, In any typescript file, Press `Ctrl Shift P` or `Command Shift P`  
+Type `TypeScript: Select TypeScript Version` and Press `Enter`  
+And choose `Use Workspace Version`  
+
+
 > _If you use other editors, see https://yarnpkg.com/getting-started/editor-sdks_
 
 ### Install dependencies
