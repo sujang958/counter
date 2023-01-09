@@ -27,3 +27,8 @@ $ yarn dlx @yarnpkg/sdks vscode
 ```
 
 > _If you use other editors, see https://yarnpkg.com/getting-started/editor-sdks_
+
+### Install dependencies
+```sh
+$ yarn
+```
