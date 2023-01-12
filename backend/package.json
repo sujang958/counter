@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "out/src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node out/src/app.js",
+    "build": "yarn format && tsc",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.4.1",
+    "ws": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/ws": "^8.5.4",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.4"
+  }
+}
