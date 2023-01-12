@@ -31,9 +31,12 @@ export default function Home() {
   }, [])
 
   return disconnected ? (
-    <div className="h-screen grid place-items-center">
+    <div className="h-screen flex flex-col items-center justify-center font-pretendard">
       <p className="text-4xl font-bold">
         Disconnected! try refreshing to reconnect to the server
+      </p>
+      <p className="text-3xl font-medium mt-4">
+        ...Or maybe the server is down?
       </p>
     </div>
   ) : (
