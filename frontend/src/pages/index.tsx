@@ -12,7 +12,7 @@ export default function Home() {
   }, [ws])
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080")
+    const ws = new WebSocket("ws://contar.sujang.xyz:8080")
 
     ws.addEventListener("open", () => {
       console.log("Connected to the websocket server")
