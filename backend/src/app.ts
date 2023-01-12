@@ -6,13 +6,16 @@ const ws = new WebSocketServer({ port: 8080 })
 enum Event {
   Add = "ADD",
   Added = "ADDED",
+  Current = "CURRENT",
 }
 
 ws.on("listening", () => {
   console.log("the server is up")
 })
 
-ws.on("connection", (connection) => {
+ws.on("connection", async (connection) => {
+  connection.send(`${Event.Current} ${(await countRef.get()).val()}`)
+
   connection.on("message", async (data) => {
     const event = data.toString("utf8").toUpperCase()
 
