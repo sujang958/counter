@@ -1,7 +1,7 @@
 import WebSocket, { WebSocketServer } from "ws"
 import { countRef } from "./firebase"
 
-const ws = new WebSocketServer({ port: 8080 })
+const ws = new WebSocketServer({ port: 8443 })
 
 enum Event {
   Add = "ADD",
