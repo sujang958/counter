@@ -43,8 +43,8 @@ export default function Home() {
     >
       <div className="text-center">
         {count ? (
-          <p className="text-5xl font-bold cursor-default">
-            <span className="cursor-default select-none">Counts: </span> {count}
+          <p className="text-5xl font-bold cursor-default select-none">
+            Counts: {count}
           </p>
         ) : (
           <p className="text-5xl font-bold">Loading...</p>
